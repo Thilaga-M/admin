@@ -1,0 +1,45 @@
+
+//initial state setup
+
+this.state={  
+        results: [ ],
+        loading: false,
+        selected: '',
+        value:''
+} 
+
+
+onchange  ajax call function 
+  
+ onSearch( value ) {
+
+     this.setState({loading:true,value:value});
+
+      servicesuggest(value)  //ajax call 
+      .then((response) => {
+         let options=[];
+         if (response.data.result) {
+            response.data.result.services.map((res,i)=>{
+               options.push({ value: res.service_display_name,result:res});
+             })
+        }
+
+        this.setState({loading:false,results:options});
+     }); 
+  }
+
+
+ //Selected value 
+ 
+  onSelect( result, index ) {  
+      console.log( "selected", result, index );
+      this.setState({selected:result,results:[],value:result.service_display_name}); 
+  }
+
+
+
+<Autocomplete placeholder="Search service..." onSearch={this.onSearch.bind( this )} value={this.state.value} onSelect={this.onSelect.bind( this )} results={this.state.results} loading={this.state.loading}>
+	{item => {
+	return <div key={item}>{item}</div>;
+	}}
+</Autocomplete> 

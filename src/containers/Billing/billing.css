@@ -1,0 +1,139 @@
+.glyphicon { margin-right:5px; }
+.thumbnail
+{
+    margin-bottom: 20px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    width: 100%;
+}
+
+.billings.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom:0px;
+}
+
+.billings.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.billings.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+.billings.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+ 
+.billings.list-group-item:before, .billings.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.billings.list-group-item img
+{
+    float: left;
+}
+.billings.list-group-item:after
+{
+    clear: both;
+}
+.list-group-item-text
+{
+    margin: 0 0 11px;
+}
+.horizontal-bars li {
+    position: relative;
+    height: 20px;
+    line-height: 11px;
+}
+.billings .horizontal-bars li .bars {
+    top: -2px;
+    padding-left: 115px;
+
+}
+.billings .horizontal-bars li .title{
+        width: 110px;
+}
+.billings .list-group-item{
+        padding: 1px 1px;
+}
+ul.nav.nav-tabs li:last-child {
+    border-right: 0px;
+}
+
+ul.nav.nav-tabs li {
+    border-right: 1px solid #beb7b7;
+}
+.filter-icon{
+    margin-top: 6px;
+    margin-left: 8px;
+}
+
+.billings .tabsli{
+    width: 20%;
+}
+.full-width{
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-top: 2px;
+}
+.half-width{
+    width: 50%;
+    float: left;
+    height: 37px;
+}
+.paddingleft{
+    padding-left: 2px;
+}
+.paddingright{
+    padding-right: 2px;
+}
+.border-width{
+     border-bottom: 1px solid #ccc;
+     border-top: 1px solid #ccc;
+     height: 136px;
+     background-color: #fff;
+    margin-bottom: 4px;
+}
+.text-rights{
+    text-align: right;
+    padding-top: 5px;
+}
+.text-rights span{
+    float: right;
+    width: 55px;
+}
+.service-div{
+    height: 35px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 5px;
+    padding-left: 12px;
+    font-size: 16px;
+    background-color: #efefef;
+}
+.delete-btn{
+    float: right;
+    background-color: #fff;
+    border-radius: 50% 50%;
+    color: #ff0000;
+    position: relative;
+}
+
+/*.width-label{
+    width: 20%;
+    float: left;
+    height: 35px;
+    padding-top: 4px;
+    font-size: 0.875rem;
+}*/
+
+
+

@@ -1,0 +1,21 @@
+.react-print-print {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.react-print-print + *
+{
+    display: none !important;
+}
+
+.react-print-hidden {
+    display: none;
+}
+
+.react-print-single {
+    page-break-before: avoid;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
